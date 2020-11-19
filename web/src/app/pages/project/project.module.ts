@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:51:36
- * @LastEditTime: 2020-11-19 23:53:44
+ * @LastEditTime: 2020-11-20 00:18:59
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/project.module.ts
@@ -20,7 +20,10 @@ import { CommandComponent } from './command/command.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { FormsModule } from '@angular/forms';
-
+import { NzListModule } from 'ng-zorro-antd/list';
+import { CommonModule } from '@angular/common';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzCardModule } from 'ng-zorro-antd/card';
 
 
 
@@ -35,9 +38,13 @@ import { FormsModule } from '@angular/forms';
     CommandComponent
   ],
   imports: [
+    CommonModule,
     NzInputModule,
+    NzCardModule,
     NzButtonModule,
     FormsModule,
+    NzListModule,
+    NzModalModule,
     ProjectRoutingModule,
   ],
   exports: [
