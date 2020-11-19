@@ -1,0 +1,76 @@
+<!--
+ * @Author: ferried
+ * @Email: harlancui@outlook.com
+ * @Date: 2020-11-19 22:36:00
+ * @LastEditTime: 2020-11-19 23:03:28
+ * @LastEditors: ferried
+ * @Description: Basic description
+ * @FilePath: /hbfu_web_courseware/web/src/app/app.component.html
+ * @LICENSE: Apache-2.0
+-->
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="https://ng.ant.design/" target="_blank">
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        <h1>HBFU Angular 课件</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="Demos" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/project/jiagou">架构</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/project/sxbd">双向绑定</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/project/zhiling">指令</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/project/guandao">管道</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/project/fuzitongxin">父子通信</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/welcome">Welcome</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Monitor</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Workplace</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a>Basic Form</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+        </span>
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
