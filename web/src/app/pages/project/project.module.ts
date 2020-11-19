@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:51:36
- * @LastEditTime: 2020-11-19 23:06:02
+ * @LastEditTime: 2020-11-19 23:53:44
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/project.module.ts
@@ -17,6 +17,10 @@ import { ZhilingComponent } from './zhiling/zhiling.component';
 import { GuandaoComponent } from './guandao/guandao.component';
 import { FuzitongxinComponent } from './fuzitongxin/fuzitongxin.component';
 import { CommandComponent } from './command/command.component';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -30,7 +34,12 @@ import { CommandComponent } from './command/command.component';
     FuzitongxinComponent,
     CommandComponent
   ],
-  imports: [ProjectRoutingModule],
+  imports: [
+    NzInputModule,
+    NzButtonModule,
+    FormsModule,
+    ProjectRoutingModule,
+  ],
   exports: [
     IndexComponent,
     JiagouComponent,
