@@ -18,7 +18,6 @@ export class ChangecolorDirective {
   constructor(private el: ElementRef) {
   }
   @Input() set color(condition: boolean) {
-
     if (condition) {
       this.el.nativeElement.style.backgroundColor = 'green';
     } else {
