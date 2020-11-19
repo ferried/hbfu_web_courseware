@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:51:47
- * @LastEditTime: 2020-11-19 23:03:13
+ * @LastEditTime: 2020-11-19 23:06:25
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/project-routing.module.ts
@@ -10,6 +10,7 @@
  */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CommandComponent } from './command/command.component';
 import { FuzitongxinComponent } from './fuzitongxin/fuzitongxin.component';
 import { GuandaoComponent } from './guandao/guandao.component';
 import { IndexComponent } from './index/index.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'sxbd', component: ShuangxiangbangdingComponent },
   { path: 'zhiling', component: ZhilingComponent },
   { path: 'fuzitongxin', component: FuzitongxinComponent },
+  { path: 'command', component: CommandComponent },
 
 ];
 

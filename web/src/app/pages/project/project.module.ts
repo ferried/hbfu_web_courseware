@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:51:36
- * @LastEditTime: 2020-11-19 22:58:26
+ * @LastEditTime: 2020-11-19 23:06:02
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/project.module.ts
@@ -16,12 +16,29 @@ import { ShuangxiangbangdingComponent } from './shuangxiangbangding/shuangxiangb
 import { ZhilingComponent } from './zhiling/zhiling.component';
 import { GuandaoComponent } from './guandao/guandao.component';
 import { FuzitongxinComponent } from './fuzitongxin/fuzitongxin.component';
+import { CommandComponent } from './command/command.component';
 
 
 
 @NgModule({
-  declarations: [IndexComponent, JiagouComponent, ShuangxiangbangdingComponent, ZhilingComponent, GuandaoComponent, FuzitongxinComponent],
+  declarations: [
+    IndexComponent,
+    JiagouComponent,
+    ShuangxiangbangdingComponent,
+    ZhilingComponent,
+    GuandaoComponent,
+    FuzitongxinComponent,
+    CommandComponent
+  ],
   imports: [ProjectRoutingModule],
-  exports: [IndexComponent, JiagouComponent, ShuangxiangbangdingComponent, ZhilingComponent, GuandaoComponent, FuzitongxinComponent],
+  exports: [
+    IndexComponent,
+    JiagouComponent,
+    ShuangxiangbangdingComponent,
+    ZhilingComponent,
+    GuandaoComponent,
+    FuzitongxinComponent,
+    CommandComponent
+  ],
 })
 export class ProjectModule { }
