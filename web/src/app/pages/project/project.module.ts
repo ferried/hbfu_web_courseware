@@ -24,6 +24,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { CommonModule } from '@angular/common';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzCardModule } from 'ng-zorro-antd/card';
+import { GreenDirective } from './green.directive';
+import { ChangecolorDirective } from './changecolor.directive';
 
 
 
@@ -35,7 +37,9 @@ import { NzCardModule } from 'ng-zorro-antd/card';
     ZhilingComponent,
     GuandaoComponent,
     FuzitongxinComponent,
-    CommandComponent
+    CommandComponent,
+    GreenDirective,
+    ChangecolorDirective
   ],
   imports: [
     CommonModule,

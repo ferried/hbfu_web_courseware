@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:56:43
- * @LastEditTime: 2020-11-20 00:19:10
+ * @LastEditTime: 2020-11-20 00:29:52
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/zhiling/zhiling.component.html
@@ -42,4 +42,10 @@
         <div *ngSwitchCase="'我是小蓝'">小蓝</div>
         <div *ngSwitchCase="'我是小紫'">小紫</div>
     </div>
+
+    <h1>自定义指令</h1>
+    <span appGreen>这是一段背景色为绿色文本</span>
+    <span appChangecolor [color]="color">这里的颜色会切换 <button nz-button [nzType]="'primary'"
+            (click)="changColor()">更换颜色</button></span>
+
 </nz-card>

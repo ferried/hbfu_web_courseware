@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:56:43
- * @LastEditTime: 2020-11-20 00:17:08
+ * @LastEditTime: 2020-11-20 00:25:16
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/zhiling/zhiling.component.ts
@@ -31,6 +31,8 @@ export class ZhilingComponent implements OnInit {
 
   isVisible = false
 
+  color = false
+
   constructor() { }
 
   ngOnInit(): void {
@@ -53,6 +55,10 @@ export class ZhilingComponent implements OnInit {
   choose(d: { name: string, age: string }) {
     console.log(d)
     this.choosed = d
+  }
+
+  changColor() {
+    this.color = !this.color
   }
 
 }
