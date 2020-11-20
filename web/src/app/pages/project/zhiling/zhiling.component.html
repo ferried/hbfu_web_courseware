@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:56:43
- * @LastEditTime: 2020-11-20 00:29:52
+ * @LastEditTime: 2020-11-20 14:11:21
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/zhiling/zhiling.component.html
@@ -47,5 +47,8 @@
     <span appGreen>这是一段背景色为绿色文本</span>
     <span appChangecolor [color]="color">这里的颜色会切换 <button nz-button [nzType]="'primary'"
             (click)="changColor()">更换颜色</button></span>
+
+    <h1>class绑定</h1>
+    <p [ngClass]="{'text_green':textColor,'text_red':!textColor}">这个字体可以自动换颜色哦</p>
 
 </nz-card>

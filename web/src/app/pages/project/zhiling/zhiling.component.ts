@@ -2,7 +2,7 @@
  * @Author: ferried
  * @Email: harlancui@outlook.com
  * @Date: 2020-11-19 22:56:43
- * @LastEditTime: 2020-11-20 00:25:16
+ * @LastEditTime: 2020-11-20 14:07:14
  * @LastEditors: ferried
  * @Description: Basic description
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/zhiling/zhiling.component.ts
@@ -33,9 +33,14 @@ export class ZhilingComponent implements OnInit {
 
   color = false
 
+  textColor = false
+
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.textColor = true
+    }, 5000)
   }
 
 
