@@ -8,17 +8,19 @@
  * @FilePath: /hbfu_web_courseware/web/src/app/app-routing.module.ts
  * @LICENSE: Apache-2.0
  */
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/welcome' },
-  { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) },
-  { path: 'project', loadChildren: () => import('./pages/project/project.module').then(m => m.ProjectModule) }
+  {path: '', pathMatch: 'full', redirectTo: '/welcome'},
+  {path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule)},
+  {path: 'project', loadChildren: () => import('./pages/project/project.module').then(m => m.ProjectModule)},
+  {path: 'person', loadChildren: () => import('./pages/server/server.module').then(m => m.ServerModule)}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

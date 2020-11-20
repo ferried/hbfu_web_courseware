@@ -10,7 +10,7 @@
 -->
 <nz-layout class="app-layout">
   <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
-    [nzTrigger]="null">
+            [nzTrigger]="null">
     <div class="sidebar-logo">
       <a href="https://ng.ant.design/" target="_blank">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
@@ -57,6 +57,13 @@
         <ul>
           <li nz-menu-item nzMatchRouter>
             <a>Basic Form</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="BS通讯" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/person/table">增删改查</a>
           </li>
         </ul>
       </li>

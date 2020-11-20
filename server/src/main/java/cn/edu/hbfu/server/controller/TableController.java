@@ -28,7 +28,7 @@ public class TableController {
     @GetMapping("/findall")
     public Map findall() {
         Map<String, List<Person>> res = new HashMap<>();
-        res.put("msg",p.findAll());
+        res.put("msg", p.findAll());
         return res;
     }
 
@@ -43,5 +43,10 @@ public class TableController {
             e.printStackTrace();
         }
         return res;
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable("id") Integer id) {
+        p.delete(id);
     }
 }

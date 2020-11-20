@@ -1,0 +1,34 @@
+<nz-card>
+  <button nz-button type="primary" (click)="showAdd()">add a person</button>
+  <nz-table #basicTable [nzData]="persons">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>age</th>
+      <th>actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.id }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.age }}</td>
+      <td>
+        <a (click)="delete(data.id)">删除</a>
+        <nz-divider nzType="vertical">|</nz-divider>
+        <a>修改</a>
+      </td>
+    </tr>
+    </tbody>
+  </nz-table>
+</nz-card>
+
+
+<nz-modal [(nzVisible)]="addWindowVis" nzTitle="The first Modal" (nzOnCancel)="cancelAdd()" (nzOnOk)="handleAdd()">
+  <div class="example-input">
+    <input nz-input [(ngModel)]="addPerson.id" type="number" placeholder="large size" nzSize="large"/>
+    <input nz-input [(ngModel)]="addPerson.name" placeholder="default size" nzSize="default"/>
+    <input nz-input [(ngModel)]="addPerson.age" placeholder="small size" nzSize="small"/>
+  </div>
+</nz-modal>
