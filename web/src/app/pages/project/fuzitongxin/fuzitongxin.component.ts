@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FuzitongxinComponent implements OnInit {
 
-  fu_text = "父组件的值"
+  fu_text = '父组件的值';
 
 
 
@@ -28,7 +28,7 @@ export class FuzitongxinComponent implements OnInit {
 
 
   jieshou(text: string) {
-    alert(text)
+    alert(text);
   }
 
 }

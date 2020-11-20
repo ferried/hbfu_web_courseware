@@ -28,7 +28,7 @@ export class ShuangxiangbangdingComponent implements OnInit {
   }
 
   change() {
-    this.searchText = '我用js触发了绑定变化,从而促使页面变化'
+    this.searchText = '我用js触发了绑定变化,从而促使页面变化';
   }
 
 }

@@ -18,52 +18,52 @@ import { Component, OnInit } from '@angular/core';
 export class ZhilingComponent implements OnInit {
 
   data: Array<{ name: string, age: string }> = [
-    { name: "我是小红", age: "我今年15岁了" },
-    { name: "我是小橙", age: "我今年16岁了" },
-    { name: "我是小黄", age: "我今年17岁了" },
-    { name: "我是小绿", age: "我今年18岁了" },
-    { name: "我是小青", age: "我今年19岁了" },
-    { name: "我是小蓝", age: "我今年20岁了" },
-    { name: "我是小紫", age: "我今年21岁了" },
-  ]
+    { name: '我是小红', age: '我今年15岁了' },
+    { name: '我是小橙', age: '我今年16岁了' },
+    { name: '我是小黄', age: '我今年17岁了' },
+    { name: '我是小绿', age: '我今年18岁了' },
+    { name: '我是小青', age: '我今年19岁了' },
+    { name: '我是小蓝', age: '我今年20岁了' },
+    { name: '我是小紫', age: '我今年21岁了' },
+  ];
 
-  choosed = null
+  choosed = null;
 
-  isVisible = false
+  isVisible = false;
 
-  color = false
+  color = false;
 
-  textColor = false
+  textColor = false;
 
   constructor() { }
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.textColor = true
-    }, 5000)
+      this.textColor = true;
+    }, 5000);
   }
 
 
   showModal() {
-    this.isVisible = true
+    this.isVisible = true;
   }
 
   handleCancel() {
-    console.log("取消")
-    this.isVisible = false
+    console.log('取消');
+    this.isVisible = false;
   }
   handleOk() {
-    console.log("确定")
-    this.isVisible = false
+    console.log('确定');
+    this.isVisible = false;
   }
 
   choose(d: { name: string, age: string }) {
-    console.log(d)
-    this.choosed = d
+    console.log(d);
+    this.choosed = d;
   }
 
   changColor() {
-    this.color = !this.color
+    this.color = !this.color;
   }
 
 }

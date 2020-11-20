@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuandaoComponent implements OnInit {
 
-  date = new Date()
+  date = new Date();
 
   number = 1;
 

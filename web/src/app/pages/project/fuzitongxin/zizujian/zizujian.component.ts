@@ -27,7 +27,7 @@ export class ZizujianComponent implements OnInit {
   }
 
   dianji() {
-    this.text = '子组件被点击了，我把text变成了这句话传递给了父组件'
+    this.text = '子组件被点击了，我把text变成了这句话传递给了父组件';
     this.event.emit(this.text);
   }
 
