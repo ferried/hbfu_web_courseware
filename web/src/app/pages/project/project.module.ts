@@ -26,6 +26,7 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { GreenDirective } from './green.directive';
 import { ChangecolorDirective } from './changecolor.directive';
+import { AddonePipe } from './addone.pipe';
 
 
 
@@ -39,7 +40,8 @@ import { ChangecolorDirective } from './changecolor.directive';
     FuzitongxinComponent,
     CommandComponent,
     GreenDirective,
-    ChangecolorDirective
+    ChangecolorDirective,
+    AddonePipe
   ],
   imports: [
     CommonModule,

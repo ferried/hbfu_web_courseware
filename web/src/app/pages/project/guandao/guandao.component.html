@@ -1,1 +1,20 @@
-<p>guandao works!</p>
+<!--
+ * @Author: ferried
+ * @Email: harlancui@outlook.com
+ * @Date: 2020-11-19 22:56:51
+ * @LastEditTime: 2020-11-20 13:46:53
+ * @LastEditors: ferried
+ * @Description: Basic description
+ * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/guandao/guandao.component.html
+ * @LICENSE: Apache-2.0
+-->
+<nz-card>
+    <h1>无管道渲染</h1>
+    {{date}}
+    <h1>日期格式管道 </h1>
+    {{date | date: 'yyyy-MM-dd'}}
+    <h1>大小写管道</h1>
+    {{'abcdefg' | uppercase}}
+    <h1>自定义加法管道</h1>
+    {{1|addone:1:2:3:4:5}}
+</nz-card>
