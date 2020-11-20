@@ -27,6 +27,7 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 import { GreenDirective } from './green.directive';
 import { ChangecolorDirective } from './changecolor.directive';
 import { AddonePipe } from './addone.pipe';
+import { ZizujianComponent } from './fuzitongxin/zizujian/zizujian.component';
 
 
 
@@ -41,7 +42,8 @@ import { AddonePipe } from './addone.pipe';
     CommandComponent,
     GreenDirective,
     ChangecolorDirective,
-    AddonePipe
+    AddonePipe,
+    ZizujianComponent
   ],
   imports: [
     CommonModule,
