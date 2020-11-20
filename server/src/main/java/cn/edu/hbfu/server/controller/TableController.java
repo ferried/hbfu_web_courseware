@@ -1,22 +1,47 @@
 package cn.edu.hbfu.server.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import cn.edu.hbfu.server.db.PersonDB;
+import cn.edu.hbfu.server.entity.Person;
+import cn.edu.hbfu.server.service.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/table")
 public class TableController {
 
+    @Autowired
+    PersonService p;
+
     @GetMapping("/index/{talk}")
     public Map index(@PathVariable("talk") String talk) {
         Map<String, String> response = new HashMap<>();
         System.out.println(talk);
-        response.put("talk",talk);
+        response.put("talk", talk);
         return response;
+    }
+
+    @GetMapping("/findall")
+    public Map findall() {
+        Map<String, List<Person>> res = new HashMap<>();
+        res.put("msg",p.findAll());
+        return res;
+    }
+
+    @PostMapping("/addperson")
+    public Map add(@RequestBody Person person) {
+        Map<String, String> res = new HashMap();
+        try {
+            p.addPerson(person);
+            res.put("msg", "成功");
+        } catch (Exception e) {
+            res.put("msg", "失败");
+            e.printStackTrace();
+        }
+        return res;
     }
 }
