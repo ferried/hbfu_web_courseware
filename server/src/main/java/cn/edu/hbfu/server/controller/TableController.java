@@ -44,7 +44,6 @@ public class TableController {
         }
         return res;
     }
-
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable("id") Integer id) {
         p.delete(id);
