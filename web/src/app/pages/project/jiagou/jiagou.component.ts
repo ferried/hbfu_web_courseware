@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-jiagou',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JiagouComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  data = [{name: 'asd', age: 'qwe', address: "zxc"}]
 
   ngOnInit(): void {
   }

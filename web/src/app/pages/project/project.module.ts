@@ -8,27 +8,30 @@
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/project.module.ts
  * @LICENSE: Apache-2.0
  */
-import { NgModule } from '@angular/core';
-import { IndexComponent } from './index/index.component';
-import { ProjectRoutingModule } from './project-routing.module';
-import { JiagouComponent } from './jiagou/jiagou.component';
-import { ShuangxiangbangdingComponent } from './shuangxiangbangding/shuangxiangbangding.component';
-import { ZhilingComponent } from './zhiling/zhiling.component';
-import { GuandaoComponent } from './guandao/guandao.component';
-import { FuzitongxinComponent } from './fuzitongxin/fuzitongxin.component';
-import { CommandComponent } from './command/command.component';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { FormsModule } from '@angular/forms';
-import { NzListModule } from 'ng-zorro-antd/list';
-import { CommonModule } from '@angular/common';
-import { NzModalModule } from 'ng-zorro-antd/modal';
-import { NzCardModule } from 'ng-zorro-antd/card';
-import { GreenDirective } from './green.directive';
-import { ChangecolorDirective } from './changecolor.directive';
-import { AddonePipe } from './addone.pipe';
-import { ZizujianComponent } from './fuzitongxin/zizujian/zizujian.component';
-
+import {NgModule} from '@angular/core';
+import {IndexComponent} from './index/index.component';
+import {ProjectRoutingModule} from './project-routing.module';
+import {JiagouComponent} from './jiagou/jiagou.component';
+import {ShuangxiangbangdingComponent} from './shuangxiangbangding/shuangxiangbangding.component';
+import {ZhilingComponent} from './zhiling/zhiling.component';
+import {GuandaoComponent} from './guandao/guandao.component';
+import {FuzitongxinComponent} from './fuzitongxin/fuzitongxin.component';
+import {CommandComponent} from './command/command.component';
+import {NzButtonModule} from 'ng-zorro-antd/button';
+import {NzInputModule} from 'ng-zorro-antd/input';
+import {FormsModule} from '@angular/forms';
+import {NzListModule} from 'ng-zorro-antd/list';
+import {CommonModule} from '@angular/common';
+import {NzModalModule} from 'ng-zorro-antd/modal';
+import {NzCardModule} from 'ng-zorro-antd/card';
+import {GreenDirective} from './green.directive';
+import {ChangecolorDirective} from './changecolor.directive';
+import {AddonePipe} from './addone.pipe';
+import {ZizujianComponent} from './fuzitongxin/zizujian/zizujian.component';
+import {FghgjhDirective} from './fghgjh.directive';
+import {DemoasjdfklComponent} from './demoasjdfkl/demoasjdfkl.component';
+import {LiveComponent} from './live/live.component';
+import {NzTableModule} from 'ng-zorro-antd/table';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { ZizujianComponent } from './fuzitongxin/zizujian/zizujian.component';
     GreenDirective,
     ChangecolorDirective,
     AddonePipe,
-    ZizujianComponent
+    ZizujianComponent,
+    FghgjhDirective,
+    DemoasjdfklComponent,
+    LiveComponent
   ],
   imports: [
     CommonModule,
@@ -53,6 +59,7 @@ import { ZizujianComponent } from './fuzitongxin/zizujian/zizujian.component';
     FormsModule,
     NzListModule,
     NzModalModule,
+    NzTableModule,
     ProjectRoutingModule,
   ],
   exports: [
@@ -65,4 +72,5 @@ import { ZizujianComponent } from './fuzitongxin/zizujian/zizujian.component';
     CommandComponent
   ],
 })
-export class ProjectModule { }
+export class ProjectModule {
+}

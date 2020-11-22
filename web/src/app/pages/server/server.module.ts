@@ -10,16 +10,20 @@ import {NzListModule} from 'ng-zorro-antd/list';
 import {NzModalModule} from 'ng-zorro-antd/modal';
 import {HttpClientModule} from '@angular/common/http';
 import { NzTableModule } from 'ng-zorro-antd/table';
-
+import { RateComponent } from './rate/rate.component';
+import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 @NgModule({
-  declarations: [TableComponent],
+  declarations: [TableComponent, RateComponent],
   imports: [
     CommonModule,
     NzInputModule,
     NzCardModule,
     NzButtonModule,
     HttpClientModule,
+    NzRateModule,
     NzTableModule,
+    NzIconModule,
     FormsModule,
     NzListModule,
     NzModalModule,

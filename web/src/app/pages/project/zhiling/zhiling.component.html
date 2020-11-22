@@ -11,10 +11,10 @@
 <nz-card>
     <h1>ngFor和属性传入</h1>
 
-    <nz-list nzItemLayout="horizontal">
+    <nz-list nzItemLayout="horizontal" [nzBordered]="true">
         <nz-list-item *ngFor="let item of data">
             <nz-list-item-meta nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-                [nzDescription]="item.age">
+                [nzDescription]="'123123132'">
                 <nz-list-item-meta-title>
                     <a (click)="choose(item)">{{ item.name }}</a>
                 </nz-list-item-meta-title>
@@ -23,7 +23,8 @@
     </nz-list>
 
     <h1>ngIf 隐藏显示</h1>
-    <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
+  <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
+
     <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
         <p>Content one</p>
         <p>Content two</p>

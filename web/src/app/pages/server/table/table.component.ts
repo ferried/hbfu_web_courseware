@@ -36,6 +36,7 @@ export class TableComponent implements OnInit {
 
   getAllPersons(): void {
     this.http.get('http://localhost:8888/server/table/findall').subscribe((response: any) => {
+      console.log(response);
       this.persons = response.msg;
     });
   }

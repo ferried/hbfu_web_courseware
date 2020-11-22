@@ -1,0 +1,5 @@
+<nz-card>
+<nz-rate [ngModel]="rateNum" (ngModelChange)="click($event)" [nzCount]="99" nzAllowHalf [nzCharacter]="characterIcon"></nz-rate>
+<ng-template #characterIcon><i nz-icon nzType="heart"></i></ng-template>
+
+</nz-card>

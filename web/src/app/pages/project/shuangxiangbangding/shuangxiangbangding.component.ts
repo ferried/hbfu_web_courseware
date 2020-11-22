@@ -8,7 +8,7 @@
  * @FilePath: /hbfu_web_courseware/web/src/app/pages/project/shuangxiangbangding/shuangxiangbangding.component.ts
  * @LICENSE: Apache-2.0
  */
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-shuangxiangbangding',
@@ -17,10 +17,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShuangxiangbangdingComponent implements OnInit {
   searchText: string;
+  data = [{name: 'sssasd', age: 'sssqwe', address: "ssszxc"}]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.searchText = "zi dong gaibian"
+    }, 3000);
   }
 
   search() {
